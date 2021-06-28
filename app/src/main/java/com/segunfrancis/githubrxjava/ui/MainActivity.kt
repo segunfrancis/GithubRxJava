@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
         binding.buttonSearch.isEnabled = true
     }
 
-    fun hideSoftInput() {
+    private fun hideSoftInput() {
         val inputMethodManager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
     }
